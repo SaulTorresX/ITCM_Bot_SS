@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch app.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeArgs": [
+                "C:\\Users\\Eduar\\Downloads\\ITCM_SS_Bot_2\\ITCM_SS_Bot\\nodejs\\app.js"
+            ]
+        }
+    ]
+}

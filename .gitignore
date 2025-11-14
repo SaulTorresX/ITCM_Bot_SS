@@ -1,0 +1,21 @@
+Archivos y carpetas generados por Visual Studio (VS)
+
+.vs/
+*.user
+*.suo
+
+Archivos de Node.js
+
+/node_modules
+npm-debug.log*
+
+Archivos de Python
+
+pycache/
+*.pyc
+
+Archivos generados
+
+*.docx
+*.xlsx
+*.pdf
