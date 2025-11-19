@@ -14,7 +14,6 @@ const { parse } = require('csv-parse')
 //Crear bot con el token
 const TelegramBot = require('node-telegram-bot-api');
 const { basename } = require('path');
-//const token = '6478162497:AAHstRMBI5iSt6Zjc2HHD5FyDTQszI1rBlM';
 const token = '7883219093:AAEE0j1vSpIxWwhaCAO3LAx0tYVPg3f235Y';
 
 const bot = new TelegramBot(token, { polling: { params: { limit: 1, timeout: 100 } }, filepath: true });
@@ -219,7 +218,6 @@ bot.on('callback_query', async (callbackQuery) => {
       case 'preview':
 
         defRuta = await getDocumentData(documentName)
-            //bot.sendDocument(chatId, defRuta[1])
             bot.sendDocument(chatId, "../archivos/res_reporte1.docx")
 
         break;

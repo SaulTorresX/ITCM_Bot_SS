@@ -64,7 +64,7 @@ class PythonSpawner {
             return;
         }
 
-        const pathToArchivos = path.resolve(__dirname, '..', 'archivos');
+        const pathToArchivos = path.resolve(__dirname, '.', 'archivos');
         const finalFilePath = path.join(pathToArchivos, fileName);
 
         console.log(`Intentando enviar archivo desde la ruta: "${finalFilePath}"`);
