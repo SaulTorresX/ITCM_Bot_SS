@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+
+      // --- ¡ESTA ES LA LÍNEA CRÍTICA! ---
+      // Le dice a VS Code que ejecute el archivo app.js
+      // que está dentro de la carpeta 'nodejs'
+      "program": "${workspaceFolder}/nodejs/app.js",
+
+      // --- ¡Y ESTA TAMBIÉN ES IMPORTANTE! ---
+      // Le dice dónde está tu "espacio de trabajo" (tus archivos)
+      "cwd": "${workspaceFolder}/nodejs"
+    }
+  ]
+}
